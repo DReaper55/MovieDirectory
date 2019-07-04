@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MovieDetails">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardDetsID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imageViewIDDets"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/movieTitleIDDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/imageViewIDDets"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:text="Movie TItle: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movieReleaseIDDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieTitleIDDets"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/imageViewIDDets"
+                android:padding="5dp"
+                android:text="Release Date: " />
+
+            <TextView
+                android:id="@+id/movieCatIDDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieReleaseIDDets"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/imageViewIDDets"
+                android:paddingLeft="5dp"
+                android:text="Category: " />
+
+            <TextView
+                android:id="@+id/movieRatingIDDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieCatIDDets"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/imageViewIDDets"
+                android:paddingLeft="5dp"
+                android:text="Rating: " />
+
+            <TextView
+                android:id="@+id/movieRuntimeIDDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieRatingIDDets"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/imageViewIDDets"
+                android:paddingLeft="5dp"
+                android:text="Runtime: " />
+
+            <TextView
+                android:id="@+id/movieDirectorID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewIDDets"
+                android:padding="10dp"
+                android:text="Directed by: " />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/movieActorsIDDets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Actors: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardDetsID"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/movieWritersIDDets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Writers:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieActorsIDDets" />
+
+    <TextView
+        android:id="@+id/moviePlotIDDets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Plot: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieWritersIDDets"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/movieBoxIDDets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Box Office: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moviePlotIDDets"
+        app:layout_constraintVertical_bias="0.063" />
+
+</android.support.constraint.ConstraintLayout>
